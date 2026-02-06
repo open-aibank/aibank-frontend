@@ -1,0 +1,111 @@
+{
+  "header": {
+    "nav": {
+      "components": "组件",
+      "features": "特性",
+      "developers": "开发者",
+      "github": "Github"
+    }
+  },
+  "menu": {
+    "dropdown": {
+      "components": {
+        "x402Sdk": {
+          "title": "x402-TRON SDK",
+          "subtitle": "为 AI 智能体提供按次付费协议"
+        },
+        "trc8004": {
+          "title": "TRC-8004 协议",
+          "subtitle": "智能体间去中心化协作的基础"
+        },
+        "tronMcpServer": {
+          "title": "TRON Mcp Server",
+          "subtitle": "为 AI 智能体提供的 TRON 区块链交互层"
+        },
+        "openclawExtension": {
+          "title": "OpenClaw Extension",
+          "subtitle": "为 OpenClaw AI 智能体提供链上支付能力的工具"
+        }
+      },
+      "developers": {
+        "docs": {
+          "title": "x402-TRON SDK",
+          "subtitle": "查看 x402-TRON SDK 文档"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": {
+        "icon": "Web3",
+        "text": "WEB3-NATIVE AI SDK"
+      },
+      "title": "智能银行解决方案",
+      "subtitle": "AiBank 是面向 AI 智能体的 Web3 开发工具包，集成支付协议、服务器接口和扩展插件，让智能体能够安全地进行链上操作、自动化支付和功能扩展。",
+      "getStarted": "开始使用",
+      "learnMore": "阅读文档",
+      "features": {
+        "feature1": {
+          "text": "x402 支付"
+        },
+        "feature2": {
+          "text": "TRON Mcp Server"
+        },
+        "feature3": {
+          "text": "TRC-8004 协议"
+        }
+      }
+    },
+    "seeItInAction": {
+      "title": "观看演示",
+      "subtitle_part1": "集成 AiBank 后，OpenClaw 智能体可以自主管理资产、处理支付并与区块链交互。请访问 ",
+      "demoGithub": "openclaw-extension",
+      "subtitle_part2": " 了解详情。"
+    },
+    "features": {
+      "title": "Web3 原生能力",
+      "subtitle": "为 AI 智能体构建的 Web3 基础能力层，让区块链交互成为智能体的原生技能。",
+      "safeBalance": {
+        "title": "链上资产管理",
+        "content": "让 AI 智能体能够持有钱包、查询余额、转账代币，拥有真正的资产控制权。"
+      },
+      "instantTransfers": {
+        "title": "x402 支付",
+        "content": "智能体可以自主处理按需付费请求，无需人工干预即可完成支付授权和交易。"
+      },
+      "smartContractCalls": {
+        "title": "智能合约交互",
+        "content": "为智能体提供统一的区块链接口，支持读取链上数据和调用智能合约。"
+      },
+      "payPerUse": {
+        "title": "TRC-8004 免信任协作",
+        "content": "通过可验证的链上身份和声誉系统，实现智能体间的免信任协作"
+      }
+    },
+    "quickStart": {
+      "title": "快速开始",
+      "subtitle_part1": "需先安装 ",
+      "openclaw": "OpenClaw",
+      "subtitle_part2": "",
+      "copied": "已复制",
+      "steps": {
+        "step1": {
+          "title": "开银行账户",
+          "content": "配置 TRON 私钥，为智能体创建链上身份与操作权限。"
+        },
+        "step2": {
+          "title": "配置能力",
+          "content": "安装 TronMcpServer，赋予智能体 TRON 链上交互能力。"
+        },
+        "step3": {
+          "title": "选择 Skills",
+          "content": "按需安装 X402 Skills、SunSwap Skills 等扩展能力模块。"
+        }
+      }
+    },
+    "warning": {
+      "left": "AiBank 是实验性项目，正在积极开发中。AiBank 不对数据丢失或安全入侵负责。请确保您的私钥安全。"
+    }
+  }
+}

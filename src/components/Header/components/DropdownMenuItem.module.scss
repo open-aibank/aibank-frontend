@@ -1,0 +1,41 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  list-style: none;
+  margin: 0;
+  border-radius: 6px;
+
+  &:hover {
+    background: rgba(35, 35, 77, 0.5);
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.2s;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}

@@ -1,0 +1,553 @@
+@use "../../styles/mixins" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  // gap: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroBadge {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 20px;
+  height: 40px;
+  background: url(../../assets/ai_agent_btn.png) no-repeat center center;
+  background-size: contain;
+  width: 228px;
+  justify-content: flex-start;
+}
+
+.warningAlert {
+  background: linear-gradient(180deg, #000211 0%, #10131a 100%);
+  padding: 16px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 50px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin-left: 6px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    top: 0;
+    bottom: 0;
+    left: -6px;
+    background-color: rgba(255, 219, 38, 1);
+    z-index: -1;
+    border-radius: 10px;
+  }
+}
+
+.warningIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.warningIconImg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.warningContent {
+  flex: 1;
+}
+
+.warningTitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+  line-height: 24px;
+}
+
+.warningText {
+  color: rgba(154, 163, 188, 1);
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.quickStartContent {
+  color: rgba(154, 163, 188, 1);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+}
+
+.seeItInActionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.actionImage {
+  width: 588px;
+  height: auto;
+}
+
+.web3Features {
+  display: grid;
+  grid-template-columns: 1fr 590px; /* 两列固定宽度 */
+  justify-content: space-between; /* 中间间距自动变化 */
+  margin-top: 50px;
+  row-gap: 20px; /* 行间距 */
+}
+
+.featureCard {
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 590px;
+  height: 225px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: url(../../assets/car_bg.png) no-repeat center center;
+  background-size: 590px 225px;
+  position: relative;
+  &:hover {
+    background: none;
+  }
+  &:hover::after {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 255px;
+    left: -15px;
+    top: -15px;
+    z-index: -1;
+    background: url(../../assets/car_hover.png) no-repeat center center;
+    background-size: contain;
+  }
+}
+.featureCardWrap {
+  // padding: 10px;
+  // box-shadow: inset 0 0 10px rgba(#013DFF, 0.5);
+  //background: url(../../assets/car_bg.png) no-repeat center center;
+  //background-size: 590px 225px;
+  //width: 620px;
+  //height: 255px;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //&:hover {
+  //  background: url(../../assets/car_hover.png) no-repeat center center;
+  //  background-size: contain;
+  //}
+}
+
+.featureCardIcon {
+  object-fit: contain;
+  width: 30px;
+}
+
+.featureCardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 30px;
+  text-align: left;
+}
+
+.featureCardContent {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  flex: 1;
+  color: rgba(154, 163, 188, 1);
+  text-align: left;
+}
+
+.badgeIcon {
+  width: 15px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 9px;
+  margin-left: 21px;
+}
+
+.badgeText {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 20px;
+  margin-top: 6px;
+}
+
+.heroTitleImage {
+  height: 108px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.heroFeatures {
+  display: flex;
+  gap: 80px;
+  margin: 40px 0 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  justify-content: center;
+}
+
+.featureIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImage {
+  object-fit: contain;
+}
+
+.featureText {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+}
+
+.heroSubtitle {
+  font-weight: 400;
+  margin: 0;
+  max-width: 870px;
+  color: rgba(154, 163, 188, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.heroVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  @include pc-large-screen {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  @include pc-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include pc-extra-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include mobile-only {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  scroll-margin-top: 80px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.terminalCard {
+  background: rgba(0, 2, 17, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 20px;
+}
+
+.terminalControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminalDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+
+  &:nth-child(1) {
+    background: #ff5f56;
+  }
+
+  &:nth-child(2) {
+    background: #ffbd2e;
+  }
+
+  &:nth-child(3) {
+    background: #27c93f;
+  }
+}
+
+.terminalTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(97, 101, 109, 1);
+}
+
+.terminalCopyWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.copiedText {
+  position: absolute;
+  right: 42px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(97, 101, 109, 1);
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+.terminalCopyButton {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover img {
+    filter: brightness(0) invert(1);
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+}
+
+.terminalContent {
+  padding: 0 20px 10px;
+}
+
+.terminalCommand {
+  display: inline-block;
+  padding: 13px 0;
+  border-radius: 8px;
+  background: rgba(15, 17, 24, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(154, 163, 188, 1);
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.quickStartSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 416px);
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: auto;
+}
+
+.stepCard {
+  width: 416px;
+  height: 232px;
+  background: url(../../assets/step_card_md.png) no-repeat center center;
+  background-size: 386px 202px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 40px;
+  &:hover {
+    background: url(../../assets/step_card_hover_md.png) no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.stepNumber {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(
+    181.43deg,
+    rgba(255, 255, 255, 0) 47.97%,
+    rgba(255, 255, 255, 0.2) 129.32%
+  );
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(157, 157, 157, 1);
+  line-height: 28px;
+  text-align: center;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.stepContent {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(154, 163, 188, 1);
+  text-align: left;
+  line-height: 1.4;
+  max-width: 320px;
+}
+
+@include pc-large-screen {
+  .actionImage {
+    width: 683px;
+  }
+  .web3Features {
+    grid-template-columns: 1fr 685px; /* 两列固定宽度 */
+    justify-content: space-between; /* 中间间距自动变化 */
+    margin-top: 50px;
+    row-gap: 30px; /* 行间距 */
+  }
+  .featureCard {
+    width: 685px;
+    height: 225px;
+    background: url(../../assets/card_bg_big.png) no-repeat center center;
+    background-size: 685px 225px;
+    position: relative;
+    &:hover::after {
+      content: "";
+      position: absolute;
+      width: 715px;
+      height: 255px;
+      left: -15px;
+      top: -15px;
+      z-index: -1;
+      background: url(../../assets/card_big_hover.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .featureCardWrap:first-child {
+    .featureCardContent {
+      width: 525px;
+    }
+  }
+
+  .quickStartSteps {
+    grid-template-columns: repeat(3, 476px);
+  }
+
+  .stepCard {
+    width: 476px;
+    height: 232px;
+    background: url(../../assets/step_card_lg.png) no-repeat center center;
+    background-size: 446px 202px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 40px;
+
+    &:hover {
+      background: url(../../assets/step_card_lg_hover.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+}

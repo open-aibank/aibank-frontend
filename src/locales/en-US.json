@@ -1,0 +1,111 @@
+{
+  "header": {
+    "nav": {
+      "components": "Components",
+      "features": "Features",
+      "developers": "Developers",
+      "github": "Github"
+    }
+  },
+  "menu": {
+    "dropdown": {
+      "components": {
+        "x402Sdk": {
+          "title": "x402-TRON SDK",
+          "subtitle": "Pay-per-use protocol for AI agents"
+        },
+        "trc8004": {
+          "title": "TRC-8004 Protocol",
+          "subtitle": "Foundation for decentralized agent-to-agent coordination"
+        },
+        "tronMcpServer": {
+          "title": "TRON Mcp Server",
+          "subtitle": "TRON blockchain interaction layer for AI agents"
+        },
+        "openclawExtension": {
+          "title": "OpenClaw Extension",
+          "subtitle": "Tools that enable onchain payment capabilities for OpenClaw agents"
+        }
+      },
+      "developers": {
+        "docs": {
+          "title": "x402-TRON SDK",
+          "subtitle": "View x402-TRON SDK Documentation"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": {
+        "icon": "Web3",
+        "text": "Web3-Native AI Agent"
+      },
+      "title": "AI-Powered Banking Solutions",
+      "subtitle": "AiBank is a Web3-enabled SDK for AI agents, integrating payment protocols, server interfaces, and extension plugins to enable secure onchain operations, automated payments, and extensible capabilities.",
+      "getStarted": "Get Started",
+      "learnMore": "Read Docs",
+      "features": {
+        "feature1": {
+          "text": "x402 Payment"
+        },
+        "feature2": {
+          "text": "TRON Mcp Server"
+        },
+        "feature3": {
+          "text": "TRC-8004 Protocol"
+        }
+      }
+    },
+    "seeItInAction": {
+      "title": "See It In Action",
+      "subtitle_part1": "With AiBank integrated, OpenClaw agents can autonomously manage assets, handle payments, and interact with blockchain. Please visit ",
+      "demoGithub": "openclaw-extension",
+      "subtitle_part2": " for details."
+    },
+    "features": {
+      "title": "Web3-Native Features",
+      "subtitle": "Web3 infrastructure layer for AI agents, making blockchain interaction a native capability.",
+      "safeBalance": {
+        "title": "Onchain Asset Management",
+        "content": "Enables AI agents to hold wallets, check balances, and transfer tokens with true asset custody."
+      },
+      "instantTransfers": {
+        "title": "x402 Payment",
+        "content": "Agents autonomously handle pay-per-use requests with automatic payment authorization and execution."
+      },
+      "smartContractCalls": {
+        "title": "Smart Contract Interaction",
+        "content": "Provides unified blockchain interface for agents to read onchain data and invoke smart contracts."
+      },
+      "payPerUse": {
+        "title": "TRC-8004 Trustless Collaboration",
+        "content": "Enables trustless agent collaboration through verifiable on-chain identity and reputation."
+      }
+    },
+    "quickStart": {
+      "title": "Quick Start",
+      "subtitle_part1": "Requires ",
+      "openclaw": "OpenClaw",
+      "subtitle_part2": " installed first",
+      "copied": "Copied",
+      "steps": {
+        "step1": {
+          "title": "Open Bank Account",
+          "content": "Configure TRON private key to create onchain identity and operation permissions for agents."
+        },
+        "step2": {
+          "title": "Configure Capabilities",
+          "content": "Install TronMcpServer to grant agents TRON onchain interaction capabilities."
+        },
+        "step3": {
+          "title": "Select Skills",
+          "content": "Install extended capability modules like X402 Skills, SunSwap Skills, etc. as needed."
+        }
+      }
+    },
+    "warning": {
+      "left": "AiBank is experimental and under active development. AiBank is not responsible for data loss or security intrusions. Please ensure your private keys are secure."
+    }
+  }
+}

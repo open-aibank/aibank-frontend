@@ -1,0 +1,27 @@
+.dropdownWrapper {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 38px;
+  padding-top: 25px;
+}
+
+.dropdown {
+  width: 508px;
+  background: rgba(4, 9, 24, 0.5);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(0, 29, 124, 1);
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
