@@ -1,0 +1,42 @@
+.button {
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background: linear-gradient(89.83deg, #1248F3 3.31%, #0BC1FA 105.64%);
+  &:hover:not(:disabled) {
+    background: linear-gradient(89.83deg, #2F61FF 3.31%, #3DD1FF 105.64%);
+  }
+}
+
+.default {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.05);
+  
+  &:hover:not(:disabled) {
+    border: 1px solid rgba(18, 72, 243, 0.5)
+  }
+}

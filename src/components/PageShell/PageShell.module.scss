@@ -1,0 +1,30 @@
+@use "../../styles/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.shell {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0 0 20px 0;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #9aa3bc;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: center;
+}

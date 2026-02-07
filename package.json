@@ -1,0 +1,49 @@
+{
+  "name": "aibank-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:ts": "tsc --noEmit --watch",
+    "type-check": "tsc -b --noEmit",
+    "build": "tsc -b && vite build",
+    "build:prod": "tsc -b && vite build",
+    "build:test": "tsc -b && vite build",
+    "build:beta": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "i18next": "^25.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^16.5.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

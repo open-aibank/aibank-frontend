@@ -1,0 +1,87 @@
+@use "sass:map";
+
+$breakpoints: (
+  lg: 1512px,
+  md: 1280px,
+  sm: 900px,
+);
+
+@mixin pc-large-screen {
+  @media (min-width: map.get($breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin pc-small-screen {
+  $lg: map.get($breakpoints, lg);
+  $lgMinus1: $lg - 1px;
+  @media (max-width: $lgMinus1) {
+    @content;
+  }
+}
+
+@mixin pc-extra-small-screen {
+  $md: map.get($breakpoints, md);
+  $sm: map.get($breakpoints, sm);
+  $mdMinus1: $md - 1px;
+  @media (min-width: $sm) and (max-width: $mdMinus1) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  $sm: map.get($breakpoints, sm);
+  $smMinus1: $sm - 1px;
+  @media (max-width: $smMinus1) {
+    @content;
+  }
+}
+
+
+@mixin gradient-glass-border (
+  $border-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+  $border-width: 1px,
+  $border-radius: 12px,
+  $bg-color: rgba(21, 12, 40, 0.4),
+  $blur: 10px
+) {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: visible; // 改为 visible 以显示阴影
+  z-index: 0;
+
+  // 渐变边框层
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: $border-width;
+    border-radius: inherit;
+    background: $border-gradient;
+
+    // 关键：mask 出中间区域，只保留边框
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /* Safari */
+    mask-composite: exclude;     /* Chrome/Edge */
+    z-index: 1;
+  }
+
+  // 模糊+背景层
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: $bg-color;
+    backdrop-filter: blur($blur);
+    z-index: 0;
+  }
+
+  // 内容保持在最上层
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}

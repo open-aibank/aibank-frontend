@@ -1,0 +1,23 @@
+@use "./styles/mixins" as *;
+
+.main {
+  @include pc-large-screen {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  @include pc-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include pc-extra-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include mobile-only {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,104 @@
+@use "../../styles/mixins" as *;
+
+.root {
+  width: 100%;
+  margin: 100px 0 40px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 0;
+
+  @include pc-large-screen {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  @include pc-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include pc-extra-small-screen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include mobile-only {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.left {
+  justify-self: start;
+}
+
+.right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.githubButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 1px solid rgba(18, 72, 243, 0.5);
+  }
+}
+
+.langButton {
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: color 0.3s ease;
+  }
+
+  button:hover {
+    color: #fff;
+  }
+}
+
+.activeText {
+  color: #fff;
+  font-weight: 500;
+}
+
+.inactiveText {
+  color: rgba(154, 163, 188, 1);
+}
+
+.separator {
+  color: rgba(154, 163, 188, 1);
+  margin: 0 5px;
+}
